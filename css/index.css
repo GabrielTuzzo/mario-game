@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.content {
+    border: 1px solid #000;
+    width: 100%;
+    height: 80%;
+    background-color: aqua;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.pipe {
+    position: absolute;
+    bottom:  0px;
+    width: 100%;
+    max-width: 150px;
+    /* animation: pipe-animation 2s infinite ease-out; */
+    left: 260px;
+}
+
+@keyframes pipe-animation {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -10%;
+    }
+}
+
+@keyframes mario-jump {
+    0% {   
+        bottom: -100px;
+    }
+    40% {
+        bottom: 320px;
+    }
+    50% {
+        bottom: 350px;
+    }
+    60% {
+        bottom: 320px;
+    }
+    100% {
+        bottom: -100px;
+    }
+}
+
+.mario {
+    position: absolute;
+    width: 400px;
+    bottom: -100px;
+}
+.jump {
+    animation: mario-jump 500ms infinite linear;
+}
