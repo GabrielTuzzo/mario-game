@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
 
 * {
     margin: 0;
@@ -12,6 +14,7 @@ body {
     background-color: rgb(17, 17, 17);
     overflow-x: hidden;
     overflow-y: hidden;
+    font-family: 'Syncopate', sans-serif;
 }
 .content {
     border-bottom: 40px solid #16ca05;
@@ -21,14 +24,23 @@ body {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
+    opacity: 0.8;
+}
+.text {
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%) !important;
 }
 .pipe {
     position: absolute;
     bottom:  0px;
     width: 100%;
     max-width: 150px;
-    animation: pipe-animation 2s infinite ease-out;
-    left: 260px;
+    /* animation: pipe-animation 2s infinite ease-out; */
+    animation: none;
+    right: 260px;
 }
 
 @keyframes pipe-animation {
@@ -65,4 +77,79 @@ body {
 }
 .jump {
     animation: mario-jump 500ms infinite linear;
+}
+
+@media screen and (max-width: 1700px) {
+    @keyframes mario-jump {
+        0% {   
+            bottom: -100px;
+        }
+        40% {
+            bottom: 420px;
+        }
+        50% {
+            bottom: 450px;
+        }
+        60% {
+            bottom: 420px;
+        }
+        100% {
+            bottom: -100px;
+        }
+    }
+    .jump {
+        animation: mario-jump 520ms infinite linear;
+    }
+}
+@media screen and (max-width: 1600px) {
+
+    .jump2 {
+        animation: mario-jump 550ms infinite linear;
+    }
+}
+@media screen and (max-width: 1450px) {
+
+    .jump3 {
+        animation: mario-jump 580ms infinite linear;
+    }
+}
+@media screen and (max-width: 1350px) {
+
+    .jump4 {
+        animation: mario-jump 620ms infinite linear;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    .jump5 {
+        animation: mario-jump 680ms infinite linear;
+    }
+}
+@media screen and (max-width: 980px) {
+
+    .jump6 {
+        animation: mario-jump 750ms infinite linear;
+    }
+}
+@media screen and (max-width: 880px) {
+    @keyframes mario-jump {
+        0% {   
+            bottom: -100px;
+        }
+        40% {
+            bottom: 480px;
+        }
+        50% {
+            bottom: 520px;
+        }
+        60% {
+            bottom: 480px;
+        }
+        100% {
+            bottom: -100px;
+        }
+    }
+    .jump7 {
+        animation: mario-jump 1s infinite linear;
+    }
 }
