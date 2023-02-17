@@ -28,10 +28,12 @@ body {
 }
 .text {
     font-size: 60px;
-    position: absolute;
-    top: 50%;
-    left: 49%;
-    transform: translate(-50%, -50%) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    z-index: 1;
 }
 .pipe {
     position: absolute;
@@ -42,6 +44,25 @@ body {
     animation: none;
     right: 260px;
 }
+.mario {
+    position: absolute;
+    width: 400px;
+    bottom: -100px;
+    z-index: 100;
+}
+.jump {
+    animation: mario-jump 500ms infinite linear;
+}
+.clouds {
+    width: 700px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    animation: clouds-animation 10s infinite linear;
+}
+
+/* ================================================================= */
 
 @keyframes pipe-animation {
     from {
@@ -70,14 +91,15 @@ body {
     }
 }
 
-.mario {
-    position: absolute;
-    width: 400px;
-    bottom: -100px;
+@keyframes clouds-animation {
+    0% {
+        right: -40%;
+    }
+    100% {
+        right: 100%;
+    }
 }
-.jump {
-    animation: mario-jump 500ms infinite linear;
-}
+/* ================================================================= */
 
 @media screen and (max-width: 1700px) {
     @keyframes mario-jump {
@@ -102,31 +124,37 @@ body {
     }
 }
 @media screen and (max-width: 1600px) {
-
     .jump2 {
         animation: mario-jump 550ms infinite linear;
     }
+    .clouds {
+        width: 700px;
+        position: absolute;
+        z-index: 0;
+        top: -40px;
+        right: 0;
+        animation: clouds-animation 10s infinite linear;
+    }
 }
 @media screen and (max-width: 1450px) {
-
     .jump3 {
         animation: mario-jump 580ms infinite linear;
     }
+    .pipe {
+        right: 60px;
+    }
 }
 @media screen and (max-width: 1350px) {
-
     .jump4 {
         animation: mario-jump 620ms infinite linear;
     }
 }
 @media screen and (max-width: 1200px) {
-
     .jump5 {
         animation: mario-jump 680ms infinite linear;
     }
 }
 @media screen and (max-width: 980px) {
-
     .jump6 {
         animation: mario-jump 750ms infinite linear;
     }
