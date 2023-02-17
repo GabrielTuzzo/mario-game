@@ -36,21 +36,21 @@ document.addEventListener("keydown", function jump4 () {
 })  
 document.addEventListener("keydown", function jump5 () {
     mario.classList.add('jump5')
-
+    pipe.style.animation = 'pipe-animation 2s infinite ease-out'
     setTimeout(() => {
         mario.classList.remove('jump5')
     }, 680)
 })  
 document.addEventListener("keydown", function jump6 () {
     mario.classList.add('jump6')
-
+    pipe.style.animation = 'pipe-animation 2s infinite ease-out'
     setTimeout(() => {
         mario.classList.remove('jump6')
     }, 750)
 })  
 document.addEventListener("keydown", function jump7 () {
     mario.classList.add('jump7')
-
+    pipe.style.animation = 'pipe-animation 2s infinite ease-out'
     setTimeout(() => {
         mario.classList.remove('jump7')
     }, 1000)
