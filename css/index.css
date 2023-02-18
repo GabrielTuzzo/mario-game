@@ -33,7 +33,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    z-index: 1;
+    z-index: 1000;
 }
 .pipe {
     position: absolute;
@@ -219,5 +219,20 @@ body {
     }
     .jump7 {
         animation: mario-jump 1s infinite linear;
+    }
+}
+@media screen and (max-height: 900px) {
+   .clouds {
+    top: -100px;
+   }
+}
+@media screen and (max-height: 750px) {
+    .clouds {
+     top: -150px;
+    }
+}
+ @media screen and (max-height: 750px) {
+    .clouds {
+     top: -190px;
     }
 }
