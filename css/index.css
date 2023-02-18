@@ -58,7 +58,7 @@ body {
     width: 700px;
     position: absolute;
     z-index: 0;
-    top: 0;
+    top: -40px;
     right: 0;
     animation: clouds-animation 10s infinite linear;
     opacity: 0.8;
