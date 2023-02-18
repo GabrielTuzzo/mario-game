@@ -85,8 +85,5 @@ if (pipePosition <= 260 && pipePosition > 20 && marioPosition <= 50) {
     setTimeout(() => {
         location.reload()
     }, 300)
-}
-
-
-}, 10)
+}}, 10)
 
