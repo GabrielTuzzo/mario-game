@@ -87,3 +87,4 @@ if (pipePosition <= 260 && pipePosition > 20 && marioPosition <= 50) {
     }, 300)
 }}, 10)
 
+
